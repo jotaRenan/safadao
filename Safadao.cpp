@@ -24,7 +24,6 @@ void safaDown::wesley_safadao(){
     safadeza-= resto*2;
   }
   anjo = (100 - safadeza);
-
   cout << nome << ", voce eh " << safadeza << "% safadao e " << anjo << "% angelical!" << endl;
 }
 
