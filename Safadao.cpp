@@ -12,22 +12,13 @@ class safaDown {
     safaDown(int Dia, int Mes, float Ano, char Nome[]) : mes(Mes), dia(Dia), ano(Ano) {
       strcpy(nome, Nome);
     }
-    int somatorio(int);
     void wesley_safadao();
 };
 
-int safaDown::somatorio(int mes) {
-  int soma=0;
-  for (int i=mes; i>=1; i--)
-    soma+=i;
-  return soma;
-}
-
-
 void safaDown::wesley_safadao(){
   float safadeza, anjo;
-
-  safadeza = somatorio(mes)+(ano/100)*(50-dia);
+  //funcao somatorio substituida por n(n+1)/2
+  safadeza = mes*(mes+1)/2+(ano/100)*(50-dia);
   if (safadeza > 100) {
     float resto = safadeza-100;
     safadeza-= resto*2;
